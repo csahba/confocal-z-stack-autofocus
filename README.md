@@ -1,5 +1,5 @@
 # confocal-z-stack-autofocus
-A matlab data processing pipeline to convert a stack of z slices from a confocal microscope into a single focused image, only for purposes of tracking cells that may drift in the z axis over time. As it was unnecessary for my needs, more accurately as it stands this a form of cell outlining.
+A matlab data processing pipeline to convert a stack of z slices from a confocal microscope into a single focused image, only for purposes of tracking cells that may drift in the z axis over time. As it was adequate for my needs, more accurately as it stands this a form of cell outlining rather than actual focussing.
 
 This is an old script I wrote when I ran experiments that required long time lapses between imaging, over which cells were prone to moving slightly in the z axis. As the microscope I was using did not have any autotracking, I set it to automate a series of z slices to span the space the cells would be in, initially to allow me to manually select focused slices.
 
