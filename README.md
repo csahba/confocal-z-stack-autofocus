@@ -5,7 +5,10 @@ This is an old script I wrote when I ran experiments that required long time lap
 
 I then noticed a quirk of confocal microscopy that allowed me to apply simple but effective maths to effectively autofocus. As focus changes, the cell acts as a lens, casting a shadow or focusing light, causing distinct changes in phase contrast in reverse directions at the cell border and in the cell body. This script fits a simple linear gradient for each pixel stack in the z axis, and uses the array of these gradients to remove noise and provide a clear image.
 
-My initial intention was to use the intersection of the fitted linear regression to select z slices in focus, but this turned out to not be necessary for my needs, though there is a version in the script.
+![z stack animation](https://github.com/csahba/confocal-z-stack-autofocus/raw/master/z%20focussing.gif)
+Here is an animation of a z stack, as we descend through focus you can see the change in contrast around the cells, this was the feature I exploited.
+
+My initial intention was to use the intersection of the fitted linear regression between the cell body and the cell wall/'halo' to select z slices in focus, but this turned out to not be necessary for my needs, though there is an imperfect version in the script and a pipeline involving creating a mask and selecting clusters of cells.
 
 Having written this in matlab, I hope to come back and port it to python as an exercise.
 
