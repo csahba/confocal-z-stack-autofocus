@@ -8,3 +8,7 @@ I then noticed a quirk of confocal microscopy that allowed me to apply simple bu
 My initial intention was to use the intersection of the fitted linear regression to select z slices in focus, but this turned out to not be necessary for my needs, though there is a version in the script.
 
 Having written this in matlab, I hope to come back and port it to python as an exercise.
+
+imreadBF and imreadBFmeta Copyright (c) 2011, Christoph Moehl copyright and license information available here https://uk.mathworks.com/matlabcentral/fileexchange/32920-imread-for-multiple-life-science-image-file-formats#license_modal
+loci_tools.jar from openmicroscopy.org license information here
+https://www.openmicroscopy.org/bio-formats/downloads/
